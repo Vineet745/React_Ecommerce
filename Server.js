@@ -14,14 +14,17 @@ import { fileURLToPath } from 'url';
 // config env
 dotenv.config();
 
+
+
+
+// database Connected
+ connectDB()
+
 // esmodule fix
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
  
 
-
-// database Connected
- connectDB()
 // Rest Object
 const app = express();
 
